@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="./js/form.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/tester.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./js/Criatura.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./js/crearCriatura.js" type="text/javascript" charset="utf-8" async defer></script>
+	<style type="text/css" media="screen">
+		span{ color:red; }
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Invocar criatura</legend>
+			<label>Tipo: </label>
+			<select id="tipo">
+				<option></option>
+				<option>Hechicer@</option>
+				<option>Guerrer@</option>
+				<option>Zombie</option>
+			</select><span id="errTipo"></span><br>
+			<label>Nombre: </label><input type="text" id="nombre"><span id="errNombre"></span><br>
+			<label>Fecha de nacimiento: </label><input type="text" id="fecha"><span id="errFecha"></span><br>
+			<label>Peso: </label><input type="number" id=peso step=0.1 value=7><span id="errPeso"></span><br>
+			<br>
+			<input type="submit" id="btn" value="Invocar">
+		</fieldset>
+	</form>
+</body>
+</html>
